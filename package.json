@@ -1,0 +1,66 @@
+{
+  "name": "react-image-annotation",
+  "version": "0.9.8",
+  "description": "react-image-annotation React component",
+  "author": "Arian Allenson Valdez <arianallensonv@gmail.com> (http://arianv.com/)",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "push": "npm run build && git add . && git commit -m 'dd' && git push",
+    "deploy": "gh-pages -d demo/dist",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "polygon-lookup": "^2.4.0",
+    "polygon-tools": "^0.4.8",
+    "react-lineto": "^3.1.2",
+    "react-rnd": "^10.1.1",
+    "styled-components": "^6.1.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "16.x",
+    "react-dom": ">=0.14"
+  },
+  "devDependencies": {
+    "nwb": "^0.25.2",
+    "raw-loader": "^4.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.18.0",
+    "react-router-dom": "^6.18.0",
+    "standard": "^17.1.0"
+  },
+  "standard": {
+    "env": [
+      "jest",
+      "jasmine"
+    ],
+    "globals": [
+      "fetch",
+      "URL"
+    ],
+    "parser": "babel-eslint"
+  },
+  "homepage": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Secretmapper/react-image-annotation"
+  },
+  "keywords": [
+    "react-component"
+  ]
+}
